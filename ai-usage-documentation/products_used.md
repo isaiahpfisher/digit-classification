@@ -1,0 +1,2 @@
+- I used Amp Code through the VS Code extension.
+  - https://ampcode.com
