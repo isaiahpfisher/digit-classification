@@ -1,6 +1,7 @@
 import pickle
 import numpy as np
 from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
 from abc import ABC, abstractmethod
 
 # interface just in case I end up building my own model before submitting
@@ -48,7 +49,7 @@ class DigitClassifier:
 
 
 def main():
-    classifier = DigitClassifier(SVC())
+    classifier = DigitClassifier(KNeighborsClassifier())
 
     wants_to_train = prompt("Do you want to train the model (y/n)?")
     if wants_to_train.lower() == "y":

@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier as KN
 import pickle
 
 def main():
@@ -25,7 +25,7 @@ def build_model(path: str):
     
     X, y = format_data(data)
     
-    model = SVC()
+    model = KN()
     model.fit(X, y)
     
     return model
